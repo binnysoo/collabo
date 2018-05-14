@@ -1,6 +1,6 @@
 class PostController < ApplicationController
     
-    def main
+    def index
         @post = Post.all
     end
     
@@ -10,7 +10,7 @@ class PostController < ApplicationController
     def create
         @post = Post.new
         @post.title = params[:title]
-        @post.content = params[:content]
+        @post.contents = params[:contents]
         
         @post.save
         
