@@ -15,7 +15,7 @@ class PostController < ApplicationController
         @post.save
         
         
-        redirect_to '/post/main'
+        redirect_to '/post/index'
     end
     
 end
