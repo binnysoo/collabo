@@ -1,0 +1,8 @@
+<h1>게시물 목록</h1>
+
+<% @posts.each do |x| %>
+    TITLE: <%= x.title %><br>
+    CONTENTS: <%= x.contents %><br>
+<% end %>
+
+<a href="/post/new">새글작성</a>
